@@ -1,0 +1,3 @@
+import ashish
+
+ashish.welcome()

@@ -1,0 +1,30 @@
+a =  input("Enter a number: ")
+print(f"Multiplication table of {a} is: ")
+try:
+    for i in range(1, 11):
+        print(f"{int(a)} X {i} = {int(a)*i}")
+except ValueError as vr:
+    print(vr)
+except Exception as e:
+    print(e)
+finally:
+    print("i am finally")
+
+# Enter a number: 6
+# Multiplication table of 6 is: 
+# 6 X 1 = 6
+# 6 X 2 = 12
+# 6 X 3 = 18
+# 6 X 4 = 24
+# 6 X 5 = 30
+# 6 X 6 = 36
+# 6 X 7 = 42
+# 6 X 8 = 48
+# 6 X 9 = 54
+# 6 X 10 = 60
+# i am finally
+
+# Enter a number: bsckabj
+# Multiplication table of bsckabj is: 
+# invalid literal for int() with base 10: 'bsckabj'
+# i am finally
